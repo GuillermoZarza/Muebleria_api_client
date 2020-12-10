@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/imgscalr-lib-4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/imgscalr-lib-4.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/imgscalr-lib-4.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-bundle-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-client-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-core-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-json-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-server-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jersey-servlet-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/eclipse-workspace/api_muebleria_client/lib/muebleria_api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
