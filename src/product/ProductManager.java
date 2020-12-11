@@ -9,7 +9,7 @@ public class ProductManager extends AbstractBaseManager {
 	public ProductManager() {
 		super();
 	}
-	/* crear */
+	/* guardar */
 	public void addProduct(String name,String description,Integer price, Integer quantity) {
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setName(name);
@@ -44,7 +44,6 @@ public class ProductManager extends AbstractBaseManager {
 	}
 	/* encontrar por alguna propiedad */
 	public void getByPropertyproduct(String textToFind){
-		// ejemplo buscar por propiedad direccion
 		ProductResult productResult = getJerseyClient().resource(getBaseUrl() + "/product/search/"+textToFind).get(ProductResult.class);
 		for (ProductDTO c : productResult.getProducts()) {
 			System.out.println("Nombre: "+c.getName());
