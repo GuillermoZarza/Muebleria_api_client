@@ -1,11 +1,10 @@
 package muebleriaManager;
 
-
 import java.util.ArrayList;
 import java.util.Date;
-
 import com.fiuni.sd.api_muebleria.dtos.sale_invoice_detail.SaleInvoiceDetailsDTO;
 
+import client.ClientManager;
 import sale_invoice.SaleInvoiceManager;
 
 
@@ -14,6 +13,10 @@ public class MuebleriaManager {
 	public static void main(String[] args) {
 		System.out.println("Prueba Muebleria");
 		
+		ClientManager client = new ClientManager();
+		client.addClient("Lorena","DelPuerto","4763428", "Encarnacion", "0975857129",2);
+		client.getAllclient();
+		client.getByIdclient(3); 
 		
 	/*	SupplierManager supplier = new SupplierManager();
 		supplier.addSupplier("Guillermo","Zarza","3484011", "Kaaguy rory, Encarnacion", "0975642894",20);
@@ -29,7 +32,7 @@ public class MuebleriaManager {
 		product.getByIdproduct(2);
 	*/
 	// Prueba factura de venta	
-		@SuppressWarnings("deprecation")
+	/*	@SuppressWarnings("deprecation")
 		Date date = new Date(2019, 12, 20);
 		SaleInvoiceManager invoice = new SaleInvoiceManager();
 		ArrayList<SaleInvoiceDetailsDTO> detalles = new ArrayList<SaleInvoiceDetailsDTO>();
@@ -48,7 +51,7 @@ public class MuebleriaManager {
 		
 		invoice.addSaleInvoice(4,101014,  date, 2, 500000, detalles);
 		invoice.getAllsaleInvoice();
-		invoice.getByIdsaleInvoice(2);
+		invoice.getByIdsaleInvoice(2);*/
 		
 	}
 }
