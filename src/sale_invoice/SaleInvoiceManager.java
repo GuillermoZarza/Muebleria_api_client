@@ -50,6 +50,15 @@ public class SaleInvoiceManager extends AbstractBaseManager {
 		System.out.println("Cliente: "+saleInvoice.getClientId());
 		System.out.println("Total: "+saleInvoice.getTotal());
 		System.out.println("Items:"+saleInvoice.getSaleInvoiceDetails().toString());
+		if(saleInvoice.getSaleInvoiceDetails()==null) {
+			System.out.println("============    sin detalles    ===============");
+		}
+		for (SaleInvoiceDetailsDTO item : saleInvoice.getSaleInvoiceDetails()) {
+			System.out.println("Item id: "+item.getId());
+			System.out.println("Producto id: "+item.getProductId());
+			System.out.println("Cantidad: "+item.getQuantity());
+			System.out.println("Precio: "+item.getPrice());
+		}
 	}
 	/* encontrar por alguna propiedad */
 	public void getByPropertysaleInvoice(String textToFind){

@@ -10,7 +10,7 @@ public class SupplierManager extends AbstractBaseManager {
 		super();
 	}
 	/* crear */
-	public void addSupplier(String name,String surname,String ruc, String address,  String phone, Integer id) {
+	public void addSupplier(String name,String surname,String ruc, String address,  String phone) {
 		SupplierDTO supplierDTO = new SupplierDTO();
 		supplierDTO.setName(name);
 		supplierDTO.setSurname(surname);
@@ -18,7 +18,7 @@ public class SupplierManager extends AbstractBaseManager {
 		supplierDTO.setAddress(address);
 		supplierDTO.setCellphone(phone);
 		supplierDTO.setType("SupplierBean");
-		supplierDTO.setId(id);
+		//supplierDTO.setId(id);
 		
 		
 		getJerseyClient().resource(getBaseUrl() + "/supplier").entity(supplierDTO).post(SupplierDTO.class);
