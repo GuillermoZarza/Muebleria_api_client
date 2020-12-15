@@ -3,11 +3,13 @@ package muebleriaManager;
 import java.util.ArrayList;
 import java.util.Date;
 
+import com.fiuni.sd.api_muebleria.dtos.purchase_invoice_detail.PurchaseInvoiceDetailsDTO;
 import com.fiuni.sd.api_muebleria.dtos.purchase_order_detail.PurchaseOrderDetailsDTO;
 import com.fiuni.sd.api_muebleria.dtos.sale_invoice_detail.SaleInvoiceDetailsDTO;
 import client.ClientManager;
 import employee.EmployeeManager;
 import product.ProductManager;
+import purchase_invoice.PurchaseInvoiceManager;
 import purchase_order.PurchaseOrderManager;
 import sale_invoice.SaleInvoiceManager;
 import supplier.SupplierManager;
@@ -28,7 +30,7 @@ public class MuebleriaManager {
 		//client.getByIdclient(3); 
 		
 		//SupplierManager supplier = new SupplierManager();
-		//supplier.addSupplier("Guillermo","Zarza","3484011", "Kaaguy rory, Encarnacion", "0975642894",20);
+		//supplier.addSupplier("Karina","Sanabria","3484011", "Kaaguy rory, Encarnacion", "0975642894");
 		//supplier.getAllsupplier();
 		//supplier.getByIdsupplier(8);
 	
@@ -61,25 +63,47 @@ public class MuebleriaManager {
 		invoice.getByIdsaleInvoice(2);*/
 		
 		// Prueba de pedido	
-			@SuppressWarnings("deprecation")
+			/*@SuppressWarnings("deprecation")
 			Date date = new Date(2019, 12, 20);
 			PurchaseOrderManager order = new PurchaseOrderManager();
 			ArrayList<PurchaseOrderDetailsDTO> detalles = new ArrayList<PurchaseOrderDetailsDTO>();
 			PurchaseOrderDetailsDTO detalle1 = new PurchaseOrderDetailsDTO();
 			detalle1.setProductId(1);
 			detalle1.setQuantity(1);
-			detalle1.setPurchaseOrderId(3);
+			detalle1.setPurchaseOrderId(3);*/
 			
 			//PurchaseOrderDetailsDTO detalle2 = new PurchaseOrderDetailsDTO();
 			//detalle2.setProductId(2);
 			//detalle2.setQuantity(1);
 			//detalle2.setPurchaseOrderId(3);
 			
+			//detalles.add(detalle1);
+			//detalles.add(detalle2);
+			
+			//order.addPurchaseOrder(4,101014,  date,2, 500000, detalles);
+			//order.getAllpurchaseOrder();
+			//order.getByIdpurchaseOrder(2);
+		
+		 //Prueba factura de compra	
+			@SuppressWarnings("deprecation")
+			Date date = new Date(2019, 12, 15);
+			PurchaseInvoiceManager invoice = new PurchaseInvoiceManager();
+			ArrayList<PurchaseInvoiceDetailsDTO> detalles = new ArrayList<PurchaseInvoiceDetailsDTO>();
+			PurchaseInvoiceDetailsDTO detalle1 = new PurchaseInvoiceDetailsDTO();
+			detalle1.setProductId(1);
+			detalle1.setQuantity(1);
+			detalle1.setPurchaseInvoiceId(3);
+			
+			/*PurchaseInvoiceDetailsDTO detalle2 = new PurchaseInvoiceDetailsDTO();
+			detalle2.setProductId(2);
+			detalle2.setQuantity(1);
+			detalle2.setPurchaseInvoiceId(3);*/
+			
 			detalles.add(detalle1);
 			//detalles.add(detalle2);
 			
-			order.addPurchaseOrder(4,101014,  date,2, 500000, detalles);
-			//order.getAllpurchaseOrder();
-			//order.getByIdpurchaseOrder(2);
+			invoice.addpurchaseInvoice(4,101014,  date, 2, 500000, detalles);
+			//invoice.getAllpurchaseInvoice();
+			//invoice.getByIdpurchaseInvoice(2);
 	}
-}
+  }

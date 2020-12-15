@@ -48,6 +48,15 @@ public class PurchaseOrderManager extends AbstractBaseManager {
 		System.out.println("Proveedor: "+purchaseOrder.getSupplierId());
 		System.out.println("Total: "+purchaseOrder.getTotal());
 		System.out.println("Items:"+purchaseOrder.getPurchaseOrderDetails().toString());
+		if(purchaseOrder.getPurchaseOrderDetails()==null) {
+			System.out.println("============    sin detalles    ===============");
+		}
+		for (PurchaseOrderDetailsDTO item : purchaseOrder.getPurchaseOrderDetails()) {
+			System.out.println("Item id: "+item.getId());
+			System.out.println("Producto id: "+item.getProductId());
+			System.out.println("Cantidad: "+item.getQuantity());
+			System.out.println("Precio: "+item.getPrice());
+		}
 	}
 	/* encontrar por alguna propiedad */
 	public void getByPropertypurchaseOrder(String textToFind){
